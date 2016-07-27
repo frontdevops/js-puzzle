@@ -44,3 +44,16 @@ console.log( x[x] == x ); // true
 
 console.log( typeof new x < typeof x );
 ```
+
+## Выполнить инциализацию x удовлетворяющей условию
+```js
+console.log( typeof new x === typeof x );
+```
+
+## Может ли существовать такой объект? Как он может получиться?
+```js
+if (Array.isArray(a)) {
+  a.map(x => x); // Error! map not found in a
+}
+```
+
